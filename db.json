@@ -1,0 +1,38 @@
+{
+  "games": [
+    {
+      "title": "Terraria",
+      "img": "https://m.media-amazon.com/images/I/81ymlIJ6n3L.jpg",
+      "price": "21.5$",
+      "type": "adventure",
+      "id": 1,
+      "description": "Terraria"
+    },
+    {
+      "title": "Genshin Impact",
+      "img": "https://assets-prd.ignimgs.com/2020/09/29/genshin-impact-button-fin-1601346152039.jpg",
+      "price": "priceless",
+      "type": "adventure",
+      "id": 2,
+      "description": "Genshin Impact"
+    },
+    {
+      "title": "Little NightMares",
+      "img": "https://upload.wikimedia.org/wikipedia/en/d/d8/Little_Nightmares_Box_Art.png",
+      "price": "16.7$",
+      "type": "horror",
+      "description": "immerse yourself in Little Mightmares, a dark whimsical tale that will confront you with your childhood fears as you help Six escape The Maw - a cast, mysterious vessel inhabited by corrupted souls looking for their next meal! ",
+      "id": 3
+    },
+    {
+      "title": "Total War",
+      "img": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/09/best-strategy-games-total-war-warhammer-3.jpg",
+      "price": "12.8$",
+      "type": "strategy",
+      "description": "If you thought that Total War: Warhammer 2 was big, it’s got nothing on Total War: Warhammer 3’s sheer sense of scale. It essentially has everything that made that game great, all while bringing all 15 of the tabletop game’s core races to life with jaw-dropping visuals. A new five-hour tutorial prologue helps get new players up to speed, so it’s also the best jumping-in point if you’ve never experienced a Total War game.",
+      "like": 0,
+      "comments": "",
+      "id": 4
+    }
+  ]
+}
