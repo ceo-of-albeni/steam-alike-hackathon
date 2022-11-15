@@ -8,7 +8,7 @@ const Footer = () => {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Valve_logo.svg/1000px-Valve_logo.svg.png"
           alt="Valve"
-          width="160"
+          width="14%"
         />
         <div className="footer">
           <p>
@@ -30,7 +30,7 @@ const Footer = () => {
         <img
           src="https://www.pngmart.com/files/22/Steam-Logo-PNG.png"
           alt="Steam"
-          width="120"
+          width="13%"
         />
       </div>
     </footer>

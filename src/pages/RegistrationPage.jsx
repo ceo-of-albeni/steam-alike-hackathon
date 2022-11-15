@@ -1,46 +1,19 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import "../styles/RegistrationPage.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContextProvider";
 
 const RegistrationPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const navigate = useNavigate();
-
-  const API = "http://localhost:8000/users";
-
-  const addUser = async newUser => {
-    await axios.post(API, newUser);
-  };
-
-  function checkUniq() {}
-
-  function createUser() {
-    if (!username || !password) {
-      alert("Some inputs are empty!");
-      return;
-    }
-
-    let newUser = {
-      username,
-      password,
-      isActive: false,
-    };
-
-    addUser(newUser);
-
-    setUsername("");
-    setPassword("");
-
-    navigate("/login");
-  }
+  const { createUser } = useAuth();
 
   return (
-    <div className="register">
+    <div className="register" style={{ height: "68vh" }}>
       <h2>Registration</h2>
       <TextField
         id="filled-basic"
@@ -59,7 +32,9 @@ const RegistrationPage = () => {
       />
       <br />
 
-      <Button variant="contained" onClick={createUser}>
+      <Button
+        variant="contained"
+        onClick={() => createUser(username, password)}>
         Sign In
       </Button>
     </div>

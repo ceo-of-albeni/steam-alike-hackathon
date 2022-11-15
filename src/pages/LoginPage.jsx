@@ -1,37 +1,16 @@
 import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContextProvider";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const navigate = useNavigate();
-
-  async function login(username, password) {
-    if (!username || !password) {
-      alert("Some inputs are empty!");
-      return;
-    }
-
-    fetch("http://localhost:8000/users")
-      .then(res => res.json())
-      .then(data => {
-        data.map(item => {
-          if (item.username == username && item.password == password) {
-            console.log("Worked");
-            item.isActive = true;
-            navigate("/");
-          }
-        });
-      });
-    setPassword("");
-    setUsername("");
-  }
+  const { login } = useAuth();
 
   return (
-    <div className="register">
+    <div className="register" style={{ height: "68vh" }}>
       <h2>Log In</h2>
 
       <TextField
