@@ -1,25 +1,34 @@
 {
+  "users": [
+    {
+      "username": "Admin",
+      "password": "pass123",
+      "id": 1
+    },
+    {
+      "username": "Aliia",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "User",
+      "password": "asd",
+      "id": 3
+    }
+  ],
   "games": [
     {
       "title": "Terraria",
       "img": "https://m.media-amazon.com/images/I/81ymlIJ6n3L.jpg",
-      "price": "21.5$",
+      "price": "21",
       "type": "adventure",
       "id": 1,
-      "description": "Terraria"
+      "description": "Копайте, сражайтесь, исследуйте, стройте! Нет ничего невозможного в этой насыщенной событиями приключенческой игре. Также доступен комплект для четверых!"
     },
     {
-      "title": "Genshin Impact",
-      "img": "https://assets-prd.ignimgs.com/2020/09/29/genshin-impact-button-fin-1601346152039.jpg",
-      "price": "priceless",
-      "type": "adventure",
-      "id": 2,
-      "description": "Genshin Impact"
-    },
-    {
-      "title": "Little NightMares",
+      "title": "Little Nightmares",
       "img": "https://upload.wikimedia.org/wikipedia/en/d/d8/Little_Nightmares_Box_Art.png",
-      "price": "16.7$",
+      "price": "16",
       "type": "horror",
       "description": "immerse yourself in Little Mightmares, a dark whimsical tale that will confront you with your childhood fears as you help Six escape The Maw - a cast, mysterious vessel inhabited by corrupted souls looking for their next meal! ",
       "id": 3
@@ -27,12 +36,52 @@
     {
       "title": "Total War",
       "img": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/09/best-strategy-games-total-war-warhammer-3.jpg",
-      "price": "12.8$",
+      "price": "12",
       "type": "strategy",
       "description": "If you thought that Total War: Warhammer 2 was big, it’s got nothing on Total War: Warhammer 3’s sheer sense of scale. It essentially has everything that made that game great, all while bringing all 15 of the tabletop game’s core races to life with jaw-dropping visuals. A new five-hour tutorial prologue helps get new players up to speed, so it’s also the best jumping-in point if you’ve never experienced a Total War game.",
       "like": 0,
       "comments": "",
       "id": 4
+    },
+    {
+      "title": "Counter-Strike",
+      "img": "https://rukminim1.flixcart.com/image/416/416/l4d2ljk0/physical-game/4/t/y/no-complete-game-2cap-counter-strike-global-offensive-csgo-pc-original-imagf9uspghpcjye.jpeg?q=70",
+      "price": "5.8",
+      "type": "shooter",
+      "description": "Counter-Strike: Global Offensive (CS:GO) расширяет границы ураганной командной игры, представленной ещё 19 лет назад. CS:GO включает в себя новые карты, персонажей, оружие и режимы игры, а также улучшает классическую составляющую CS (de_dust2 и т. п.).",
+      "like": 0,
+      "comments": "",
+      "id": 5
+    },
+    {
+      "title": "VALORANT",
+      "img": "https://www.kemperlesnik.com/wp-content/uploads/2020/04/valorant-official-art.jpg",
+      "price": "12",
+      "type": "shooter",
+      "description": "VALORANT — это всемирно известный соревновательный тактический шутер с матчами 5 на 5, в котором грамотное применение умений, меткая стрельба и слаженная командная работа помогут вам перехитрить, переиграть и затмить противника.",
+      "like": 0,
+      "comments": "",
+      "id": 6
+    },
+    {
+      "title": "Overwatch",
+      "img": "https://m.media-amazon.com/images/M/MV5BYjBkNTJkOWUtNTg1ZS00NGZhLWIxMGUtOWE0ZDA0NzRkODM3XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg",
+      "price": "2",
+      "type": "shooter",
+      "description": "Overwatch — бесплатная командная игра в ярком мире будущего, каждый матч которой представляет собой поистине потрясающий бой 5 на 5. Участвуйте в сражениях в разных уголках мира, играя за любого из 30 уникальных героев, таких как воинственная путешественница во времени и использующий в бою силу музыки диджей.",
+      "like": 0,
+      "comments": "",
+      "id": 7
+    },
+    {
+      "title": "Genshin Impact",
+      "img": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820",
+      "price": "9",
+      "type": "adventure",
+      "description": "Компьютерная игра в жанре action-adventure с открытым миром и элементами RPG, разработанная китайской компанией miHoYo Limited.",
+      "like": 0,
+      "comments": "",
+      "id": 8
     }
   ]
 }
