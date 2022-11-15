@@ -32,7 +32,7 @@ const EditGame = () => {
   }, [oneGame]);
 
   function saveChanges() {
-    if (!title || !img || !price || !type || !description) {
+    if (!title || !img || !price || !type||  !description) {
       alert("Some inputs are empty!");
       return;
     }

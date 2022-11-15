@@ -16,7 +16,7 @@ const Details = () => {
   useEffect(() => {
     getOneGame(params.id);
   }, []);
-
+ 
   return oneGame ? (
     <div
       style={{

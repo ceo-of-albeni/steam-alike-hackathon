@@ -20,7 +20,7 @@ const App = () => {
         <CartContextProvider>
           <GameContextProvider>
             <AuthContextProvider>
-              <Header />
+              <Header/>
               <Routes>
                 <Route path="/register" element={<RegistrationPage />} />
                 <Route path="/login" element={<LoginPage />} />

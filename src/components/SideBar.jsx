@@ -67,7 +67,7 @@ export default function SwipeableTemporaryDrawer() {
             textDecoration: 'none',
           }}
         >
-          SideBar
+SideBar
         </Typography>
       
           <SwipeableDrawer
