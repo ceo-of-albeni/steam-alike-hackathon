@@ -34,16 +34,6 @@
       "id": 3
     },
     {
-      "title": "Total War",
-      "img": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/09/best-strategy-games-total-war-warhammer-3.jpg",
-      "price": "12",
-      "type": "strategy",
-      "description": "If you thought that Total War: Warhammer 2 was big, it’s got nothing on Total War: Warhammer 3’s sheer sense of scale. It essentially has everything that made that game great, all while bringing all 15 of the tabletop game’s core races to life with jaw-dropping visuals. A new five-hour tutorial prologue helps get new players up to speed, so it’s also the best jumping-in point if you’ve never experienced a Total War game.",
-      "like": 0,
-      "comments": "",
-      "id": 4
-    },
-    {
       "title": "Counter-Strike",
       "img": "https://rukminim1.flixcart.com/image/416/416/l4d2ljk0/physical-game/4/t/y/no-complete-game-2cap-counter-strike-global-offensive-csgo-pc-original-imagf9uspghpcjye.jpeg?q=70",
       "price": "5.8",
@@ -82,6 +72,16 @@
       "like": 0,
       "comments": "",
       "id": 8
+    },
+    {
+      "title": "Cyberpunk 2077",
+      "img": "https://upload.wikimedia.org/wikipedia/ru/b/bb/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9_%D0%B8%D0%B3%D1%80%D1%8B_Cyberpunk_2077.jpg",
+      "price": "29.99",
+      "type": "adventure",
+      "description": "Cyberpunk 2077 — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего.",
+      "like": 0,
+      "comments": "",
+      "id": 9
     }
   ]
 }
