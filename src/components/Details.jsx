@@ -2,10 +2,8 @@ import React, { useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { gameContext } from "../gameContext";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 const Details = () => {
@@ -16,7 +14,7 @@ const Details = () => {
   useEffect(() => {
     getOneGame(params.id);
   }, []);
- 
+
   return oneGame ? (
     <div
       style={{
@@ -25,11 +23,13 @@ const Details = () => {
         marginBottom: "8%",
         marginTop: "2%",
       }}>
-      <Card style={{ margin: "10px" }} sx={{ maxWidth: 345 }}>
+      <Card
+        style={{ margin: "10px", display: "flex", flexDirection: "row" }}
+        sx={{ maxWidth: 800 }}>
         <CardMedia
           component="img"
           alt="error"
-          height="270"
+          height="450"
           image={oneGame.img}
         />
         <CardContent>
