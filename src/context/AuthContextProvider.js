@@ -50,11 +50,6 @@ const AuthContextProvider = ({ children }) => {
       return;
     }
 
-    let formData = new FormData();
-    formData.append("username", username);
-    formData.append("password", password);
-    setUser(username);
-
     fetch("http://localhost:8000/users")
       .then(res => res.json())
       .then(data => {
