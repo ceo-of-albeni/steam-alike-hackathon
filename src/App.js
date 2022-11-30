@@ -1,26 +1,44 @@
 import React from "react";
-import GameContextProvider from "./gameContext";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import GameList from "./components/GamesList";
-import EditGame from "./components/EditGame";
-import CreateGame from "./components/CreateGame";
-import Details from "./components/Details";
+import SideBar from "./components/SideBar";
+import Createmusics from "./components/CRUD/Createmusics";
 import Header from "./components/Header";
-import SideBar from './components/SideBar'
+import MusicsContextProvider from "./components/Context/musicsContext";
+import MusicList from "./components/CRUD/MusicList";
+import DetailsMusic from './components/CRUD/DetailsMusic'
+import EditMusic from "./components/CRUD/EditMusic";
+import RegisterPage from "./Account/RegisterPage"
+import LoginPage from './Account/LoginPage'
+import  PreviewPage from './PreviewPage/PreviewPage'
+import LogOut from './logOut/LogOut'
+import RestorePassword from './Account/RestorePassword/RestorePassword'
+import AuthContextProvider from "./Account/AuthContextProvider";
 const App = () => {
   return (
-    <BrowserRouter>
-      <GameContextProvider>
-        <Header />
-        <Routes>
-          <Route path="/create" element={<CreateGame />} />
-          <Route path="/games" element={<GameList />} />
-          <Route path="/edit/:id" element={<EditGame />} />
-          <Route path="/details/:id" element={<Details />} />
-        </Routes>
-      </GameContextProvider>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <MusicsContextProvider>
+<AuthContextProvider>
+          <SideBar />
+          <Routes>
+            <Route path="/musics" element={<MusicList />} />
+            <Route path="/details" element={<DetailsMusic />} />
+            <Route path="/update" element={<EditMusic />} />
+            <Route path="/list" element={<Header />} />
+            <Route path="/create" element={<Createmusics />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/prev-page" element={<PreviewPage />} />
+            <Route path="/logout" element={<LogOut />} />
+            <Route path="/restore-pass" element={<RestorePassword />} />
+         
+
+          </Routes>
+          </AuthContextProvider>
+        </MusicsContextProvider>
+      </BrowserRouter>
+    </>
+
   );
 };
 

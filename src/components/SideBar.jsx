@@ -1,90 +1,83 @@
-import React from 'react';
-import Box from '@mui/material/Box';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
-import Toolbar from '@mui/material/Toolbar';
-import GameSideBar from './GameSideBar';
-import FilterGame from './FilterGame'
-export default function SwipeableTemporaryDrawer() {
-  const [state, setState] = React.useState({
-    
-    left: false,
-   
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event &&
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
-    ) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
-
-  const list = (anchor) => (
-    <Box 
-    
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200 }}
-      role="presentation"
-     
-      onKeyDown={toggleDrawer(anchor, true)}
-    >
-      <List>
-<GameSideBar/>
-      </List>
-      <Divider />
-      <List>
-        <FilterGame/>
-      </List>
-    </Box>
-  );
+import React from "react";
+import HomeIcon from "@mui/icons-material/Home";
+import SearchIcon from "@mui/icons-material/Search";
+import QueueMusicIcon from "@mui/icons-material/QueueMusic";
+import { useNavigate } from "react-router-dom";
+import AddBoxIcon from "@mui/icons-material/AddBox";
+import BookmarksIcon from "@mui/icons-material/Bookmarks";
+const SideBar = () => {
+  const navigate = useNavigate();
 
   return (
-    <div >
-      <Toolbar disableGutters>
-      {['left'].map((anchor) => (
-        <div className='SideBar'>
-           <React.Fragment key={anchor} >
-           <Typography 
-           variant="h6"
-          noWrap
-          component="a"
-          href='#'
-          onClick={toggleDrawer(anchor, true)}
-          sx={{
-            mr: 2,
-            display: { xs: 'none', md: 'flex' },
-            fontFamily: 'monospace',
-            fontWeight: 700,
-            letterSpacing: '.3rem',
-            color: 'inherit',
-            textDecoration: 'none',
+    <div style={{display:'flex'}}>
+      <div className="SideBarBlock">
+        <a
+          href="#"
+          onClick={() => navigate("/list")}
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <img
+            src="https://www.ixbt.com/img/n1/news/2021/4/2/spotify-logo-1920x1080-2-1536x865_large.png"
+            style={{ width: "140px" }}
+            alt=""
+          />
+        </a>
+
+        <a
+          href="#"
+          onClick={() => navigate("/musics")}
+          style={{ display: "flex", alignItems: "center", height: "30px" }}
+        >
+          <HomeIcon style={{ color: "white", marginLeft: "19px" }} />
+          <h5>Home</h5>
+        </a>
+        <a
+          href="#"
+          style={{ display: "flex", alignItems: "center", height: "30px" }}
+        >
+          <SearchIcon style={{ color: "white", marginLeft: "19px" }} />
+
+          <h5>Search</h5>
+        </a>
+        <a
+          href="#"
+          style={{ display: "flex", alignItems: "center", height: "30px" }}
+        >
+          <QueueMusicIcon style={{ color: "white", marginLeft: "19px" }} />
+
+          <h5>MyMedia</h5>
+        </a>
+        <a
+          href="#"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            height: "30px",
+            marginTop: "10px",
           }}
         >
-          SideBar
-        </Typography>
-      
-          <SwipeableDrawer
-          style={{color:'red'}}
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-            onOpen={toggleDrawer(anchor, true)}
-          >
-            {list(anchor)}
-            <Button variant="outlined"  onClick={toggleDrawer(anchor, false)}>Close</Button>
-          </SwipeableDrawer>
-        </React.Fragment>
-        </div>
-       
-      ))}
-    </Toolbar>
+          <AddBoxIcon style={{ color: "white", marginLeft: "19px" }} />
+
+          <h5>AddPlayList</h5>
+        </a>
+        <a
+          href="#"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            height: "30px",
+            marginTop: "10px",
+          }}
+        >
+          <BookmarksIcon style={{ color: "white", marginLeft: "19px" }} />
+
+          <h5>favorite tracks</h5>
+        </a>
+
+        <hr style={{ color: "white", width: "110px" }} />
+      </div>
     </div>
   );
-}
+};
+
+export default SideBar;
