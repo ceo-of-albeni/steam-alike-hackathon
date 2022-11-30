@@ -86,4 +86,9 @@ a {
 }
 .AppBarSpotify {
   height: 60px;
+
+}
+.AddBarBox{
+margin-left: auto;
+border-radius: 5px; 
 }
